@@ -1,0 +1,70 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.youtube-logo {
+  width: 100px; /* Adjust size as needed */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center; /* Center the search bar horizontally */
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 80%; /* Adjust the width of the search bar */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-card {
+  width: calc(33.33% - 10px); /* Adjust width and gap */
+  margin-bottom: 20px;
+}
+
+/* Adjust margins to create a small gap between videos */
+.video-card:not(:nth-child(3n)) {
+  margin-right: 10px;
+}
+
+/* Reset margin for the last video in the row */
+.video-card:nth-child(3n) {
+  margin-right: 0;
+}
